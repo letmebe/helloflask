@@ -1,0 +1,91 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% header.tex
+% 用于 Pandoc 转 PDF 时自动加载 mhchem 宏包支持化学式
+\usepackage[version=4]{mhchem}
+\usepackage{xeCJK}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+豆包：
+
+\section{识别题目}\label{ux8bc6ux522bux9898ux76ee}
+
+下列物质的俗名、化学式、分类完全正确的是（ ~ ） A.
+水银、\(\mathrm{H}\mathrm{g}\)、单质 B.
+熟石灰、\(\mathrm{C}\mathrm{a}\mathrm{O}\)、氧化物 C.
+苛性钠、\(\ce{NaOH}\)、盐 D.
+纯碱、\(\mathrm{N}{\mathrm{a}}_{\mathrm{2}}\mathrm{C}{\mathrm{O}}_{\mathrm{3}}\)、碱
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{答案}\label{ux7b54ux6848}
+
+A
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡解析}\label{ux89e3ux6790}
+
+\subsection{逐项分析}\label{ux9010ux9879ux5206ux6790}
+
+\paragraph{A 选项}\label{a-ux9009ux9879}
+
+水银是汞这种单质的俗名，汞的化学式为(\mathrm{H}\mathrm{g})。单质是由同种元素组成的纯净物，汞只由汞元素组成，所以属于单质，A
+正确。 \#\#\#\# B 选项
+熟石灰是氢氧化钙的俗名，其化学式应该是(\ce{Ca(OH)_{2}})，而不是(\mathrm{C}\mathrm{a}\mathrm{O})。碱是指在水溶液中电离出的阴离子全部是(\ce{OH^{-}})的化合物，氢氧化钙在水溶液中会电离出(\ce{Ca^{2 + }})和(\ce{OH^{-}})，阴离子全部是(\ce{OH^{-}})，所以氢氧化钙属于碱，并非氧化物，B
+错误。 \#\#\#\# C 选项
+苛性钠是氢氧化钠的俗名，其化学式为(\ce{NaOH})。碱的定义是在水溶液中电离出的阴离子全部是(\ce{OH^{-}})的化合物，氢氧化钠在水溶液中电离出(\ce{Na^{ + }})和(\ce{OH^{-}})，阴离子全部是(\ce{OH^{-}})，所以它属于碱，而不是盐，盐是由金属离子（或铵根离子）与酸根离子组成的化合物，C
+错误。 \#\#\#\# D 选项
+纯碱是碳酸钠的俗名，化学式为(\ce{Na_{2}CO_{3}})。由金属离子（(\ce{Na^{ + }})）和酸根离子（(\ce{CO_{3}^{2 - }})）构成的化合物属于盐，并非碱，所以碳酸钠属于盐，D
+错误。 \#\# 总结 故本题答案为：A。
+
+\end{document}
